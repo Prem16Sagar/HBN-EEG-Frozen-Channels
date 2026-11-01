@@ -15,7 +15,7 @@ The study scans every HBN-EEG resting-state recording in Releases 1–10 (2,597 
 | `code/` | Every script, in one flat folder. Several scripts import others by name (`pilot_v31.py`, `wp1_census.py`), so keep them together and do not rename them. |
 | `specs/` | Written specifications and amendments, each fixed before the analysis it governs was run. |
 | `results/` | Derived tables reported in the paper (see below). |
-| `figures/` | Figures 1b, 2 and 3 as PNG and PDF, plus `figure_numbers.json` with every number drawn. |
+| `figures/` | Figures 1-3 as PNG and PDF, plus `figure_numbers.json` with every number drawn. |
 
 ## How the scripts were run
 
