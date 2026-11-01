@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper and this repository."
+title: "Frozen channels in the HBN-EEG releases: code, specifications and derived results"
+authors:
+  - family-names: "Sagar"
+    given-names: "Prem"
+    affiliation: "Department of Computer Science, St Joseph's University, Bengaluru, India"
+  - family-names: "S."
+    given-names: "Ruban"
+    affiliation: "School of Engineering, St Aloysius (Deemed to be University), Mangaluru, India"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-01"
+# Add after the Zenodo release:
+# doi: "10.5281/zenodo.XXXXXXX"

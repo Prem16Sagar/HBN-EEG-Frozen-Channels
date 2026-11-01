@@ -1,0 +1,98 @@
+query_no,query,rank,record,decision,reason
+1,"""Healthy Brain Network"" EEG preprocessing",1,arXiv 2506.22455,include,HBN-EEG resting analysis; methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",2,arXiv 2203.02552,include,HBN resting analysis; methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",3,arXiv 2310.11994,include,HBN resting analysis; methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",4,PMC13655006 (Front Neuroinform 2026),exclude,"not HBN data (sleep recordings, synthetic data)"
+1,"""Healthy Brain Network"" EEG preprocessing",5,arXiv 2503.19924,include,HBN resting analysis (inattentive ADHD vs controls); methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",6,arXiv 2502.08686,exclude,"not HBN data (LEMON, semi-simulated EOG dataset); full text checked"
+1,"""Healthy Brain Network"" EEG preprocessing",7,arXiv 2511.15393,exclude,not HBN data (single-hospital cohort); full text checked
+1,"""Healthy Brain Network"" EEG preprocessing",8,arXiv 2606.30104,include,HBN-EEG pretraining analysis; methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",9,arXiv 2606.23706,include,HBN (challenge distribution) analysis; methods accessible
+1,"""Healthy Brain Network"" EEG preprocessing",10,conf.msu.ru Lomonosov-2022 abstract,exclude,not HBN; conference abstract on infant EEG
+2,"""HBN-EEG""",1,bioRxiv 10.1101/2024.10.03.615261 (pdf),exclude,dataset descriptor
+2,"""HBN-EEG""",2,arXiv 2009.13402,exclude,review
+2,"""HBN-EEG""",3,PMC10659091 (Front Hum Neurosci 2023),include,HBN resting analysis; methods accessible
+2,"""HBN-EEG""",4,bioRxiv 615261v2 (page),exclude,duplicate of Q2 rank 1 (descriptor)
+2,"""HBN-EEG""",5,arXiv 2310.11994,duplicate,already screened (Q1 rank 3)
+2,"""HBN-EEG""",6,arXiv 2606.30104,duplicate,already screened (Q1 rank 8)
+2,"""HBN-EEG""",7,Zenodo record 17306881,exclude,dataset record
+2,"""HBN-EEG""",8,EEGLAB newsletter issue 19,exclude,newsletter
+2,"""HBN-EEG""",9,CNS mailing-list post,exclude,project announcement
+2,"""HBN-EEG""",10,nemar-dev forum ds005505,exclude,dataset forum listing
+3,"""HBN"" EEG resting state",1,PMC10659091,duplicate,already screened (Q2 rank 3)
+3,"""HBN"" EEG resting state",2,arXiv 2310.11994,duplicate,already screened (Q1 rank 3)
+3,"""HBN"" EEG resting state",3,PMC11994696 (Front Neuroimaging 2025),include,HBN resting/video analysis; methods accessible
+3,"""HBN"" EEG resting state",4,arXiv 2607.06629,include,HBN pretraining analysis; methods accessible
+3,"""HBN"" EEG resting state",5,medRxiv 10.1101/2020.10.09.20207936,exclude,"fMRI, not EEG"
+3,"""HBN"" EEG resting state",6,bioRxiv 10.1101/149369,exclude,dataset descriptor (HBN Biobank)
+3,"""HBN"" EEG resting state",7,PMC12562131,include-pending,"HBN resting EEG (n=100) per record; PMC full text blocked to Claude (browser check, 2 attempts) -> manual extraction needed"
+3,"""HBN"" EEG resting state",8,PMC6870341 figure page,exclude,not HBN (2012 article figure)
+3,"""HBN"" EEG resting state",9,bioRxiv 615261v2 (page),exclude,duplicate of Q2 rank 1 (descriptor)
+3,"""HBN"" EEG resting state",10,ISMRM 2014 abstract 0386,exclude,not HBN
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,1,medRxiv 10.1101/2024.10.25.24316133,exclude,datasets described in record are clinical cohorts; HBN not mentioned (full text NOT checked - spot-check)
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,2,arXiv 2605.21280,exclude,not HBN (TUH corpora only); full text checked
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,3,USPTO 11529107,exclude,patent
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,4,bioRxiv 10.1101/2020.02.14.948968,exclude,not HBN; general EEG essay
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,5,USPTO 11779262,exclude,patent
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,6,USPTO 11633139,exclude,patent
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,7,alphaneural EEGDash ds005510 pointer,exclude,dataset pointer
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,8,PMC4402280 figure page,exclude,animal study
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,9,PMC5683343 table page,exclude,not HBN (Down syndrome review table)
+4,ds005505 OR ds005506 OR ... OR ds005516 EEG,10,MDPI Brain Sci 14(2):136,exclude,review; not HBN
+5,"""EEG Foundation Challenge"" HBN",1,arXiv 2506.19141 (pdf),exclude,"challenge proposal/descriptor, not an analysis"
+5,"""EEG Foundation Challenge"" HBN",2,arXiv 2506.19141v1 (html),duplicate,duplicate of Q5 rank 1
+5,"""EEG Foundation Challenge"" HBN",3,arXiv 2508.17742,exclude,"not HBN (14 benchmark datasets, none HBN); full text checked"
+5,"""EEG Foundation Challenge"" HBN",4,eeglablist post Aug 2025,exclude,announcement
+5,"""EEG Foundation Challenge"" HBN",5,EEGLAB newsletter issue 20,exclude,newsletter
+5,"""EEG Foundation Challenge"" HBN",6,vscentrum.be blog,exclude,blog
+5,"""EEG Foundation Challenge"" HBN",7,fcon_1000 OpenScience page,exclude,web page
+5,"""EEG Foundation Challenge"" HBN",8,MNE discourse thread,exclude,forum post
+5,"""EEG Foundation Challenge"" HBN",9,lib.upmc.fr internship posting,exclude,job posting
+5,"""EEG Foundation Challenge"" HBN",10,web3.arxiv abs 2506.19141,duplicate,duplicate of Q5 rank 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",1,arXiv 2203.02552,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",2,GitHub nemarDatasets/on005507,exclude,dataset page
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",3,arXiv 2503.19924,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",4,arXiv 2011.12107 (EEG-GCNN),exclude,"not HBN (TUAB, LEMON per record)"
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",5,PMC11994696,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",6,arXiv 2506.22455,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",7,arXiv 2511.15393,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",8,arXiv 2606.30104,duplicate,round 1
+A3-1,"""Healthy Brain Network"" EEG preprocessing [extended]",9,ResearchGate 355928130 (NeurML),include-pending,HBN preprocessing/ML study per record; ResearchGate blocks Claude; one open-copy lookup search found none -> manual extraction
+A3-2,"""HBN-EEG"" [extended]",1,bioRxiv 615261 (pdf),duplicate,round 1 (descriptor)
+A3-2,"""HBN-EEG"" [extended]",2,bioRxiv 615261v1,exclude,dataset descriptor
+A3-2,"""HBN-EEG"" [extended]",3,GitHub nemarDatasets/on005516,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",4,GitHub nemarDatasets/on005510,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",5,OpenNeuro ds005507,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",6,nemar-dev ds005505,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",7,OpenNeuro ds005515,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",8,OpenNeuro ds005505 download,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",9,OpenNeuro ds005506,exclude,dataset page
+A3-2,"""HBN-EEG"" [extended]",10,arXiv 2509.00314 (CoMET),include,HBN-EEG pretraining analysis; methods accessible
+A3-3,"""HBN"" EEG resting state [extended]",1,bioRxiv 615261v2.full,exclude,dataset descriptor
+A3-3,"""HBN"" EEG resting state [extended]",2,ResearchGate HBN-EEG descriptor,exclude,dataset descriptor
+A3-3,"""HBN"" EEG resting state [extended]",3,NEMAR on005515,exclude,dataset page
+A3-3,"""HBN"" EEG resting state [extended]",4,Nature Sci Data 2017 sdata2017181,exclude,dataset descriptor (HBN Biobank)
+A3-3,"""HBN"" EEG resting state [extended]",5,NEMAR on005516,exclude,dataset page
+A3-3,"""HBN"" EEG resting state [extended]",6,OpenNeuro ds005507,exclude,dataset page
+A3-3,"""HBN"" EEG resting state [extended]",7,PMC11691402,exclude,not HBN (older adults abstract)
+A3-3,"""HBN"" EEG resting state [extended]",8,PMC3847481,exclude,review; not HBN
+A3-3,"""HBN"" EEG resting state [extended]",9,arXiv 2510.22364,exclude,"not HBN (creativity resting EEG, per record; full text not checked)"
+A3-3,"""HBN"" EEG resting state [extended]",10,neuromechanist.github.io HBN page,exclude,dataset web page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],1,NEMAR ds005505,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],2,nemar-dev ds005505,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],3,NEMAR ds005506,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],4,NEMAR ds005508,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],5,NEMAR ds005507,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],6,HuggingFace xw1216 HBN archives,exclude,dataset archive
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],7,EEGDash OpenNeuro list,exclude,dataset listing
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],8,OpenNeuro ds005507,exclude,dataset page
+A3-4,ds005505 OR ... OR ds005516 EEG [extended],9,EEGDash datasets API,exclude,dataset listing
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",1,arXiv 2506.19141 (html),duplicate,round 1 (challenge descriptor)
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",2,ResearchGate challenge paper,exclude,challenge descriptor
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",3,themoonlight.io review,exclude,third-party summary
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",4,fcon_1000 OpenScience,duplicate,round 1
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",5,vscentrum.be blog,duplicate,round 1
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",6,MNE discourse,duplicate,round 1
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",7,eeg2025 proposal pdf,exclude,challenge descriptor
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",8,GitHub STEEGFormer,exclude,"code repository, not a paper"
+A3-5,"""EEG Foundation Challenge"" HBN [extended]",9,eeg2025.github.io,exclude,challenge web page

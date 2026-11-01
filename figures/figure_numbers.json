@@ -1,0 +1,78 @@
+{
+ "Figure 1": {
+  "source": "/home/claude/real/hbn/revision_B/census/census_v1_r10r11/summary_20261026_112208/combined_summary.csv",
+  "total": 2597,
+  "pct": {
+   "any_frozen": 74.4,
+   "code": 59.1,
+   "scalp_episodic": 24.8
+  }
+ },
+ "Figure 2": {
+  "frozen_only__inflation_ratio|no frozen scalp channel": {
+   "n": 81,
+   "median": 1.0
+  },
+  "frozen_only__inflation_ratio|whole-recording frozen scalp channels only": {
+   "n": 45,
+   "median": 0.9999726235352572
+  },
+  "frozen_only__inflation_ratio|>=1 episodic frozen scalp channel": {
+   "n": 55,
+   "median": 5.955970802732407
+  },
+  "frozen_only__exponent_error|no frozen scalp channel": {
+   "n": 81,
+   "median": 0.0
+  },
+  "frozen_only__exponent_error|whole-recording frozen scalp channels only": {
+   "n": 45,
+   "median": -0.0002669464359792
+  },
+  "frozen_only__exponent_error|>=1 episodic frozen scalp channel": {
+   "n": 53,
+   "median": 0.2310442293254051
+  },
+  "source": "/home/claude/real/hbn/revision_B/harm/harm_v1/summary_20261022_124349/harm_per_child.csv"
+ },
+ "Figure 3": {
+  "all sampled recordings": {
+   "1\u20135 s": [
+    47,
+    141
+   ],
+   "5\u201330 s": [
+    23,
+    23
+   ],
+   "\u226530 s": [
+    120,
+    120
+   ],
+   "whole\nrecording": [
+    209,
+    209
+   ]
+  },
+  "excluding NDARWK983JFE": {
+   "1\u20135 s": [
+    20,
+    20
+   ],
+   "5\u201330 s": [
+    23,
+    23
+   ],
+   "\u226530 s": [
+    119,
+    119
+   ],
+   "whole\nrecording": [
+    209,
+    209
+   ]
+  },
+  "worst_recording": "NDARWK983JFE",
+  "source": "/home/claude/real/hbn/revision_B/detector_xrel/xrel_v1/summary_20261026_110237/detector_xrel_per_channel.csv"
+ }
+}

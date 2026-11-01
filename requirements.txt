@@ -1,0 +1,11 @@
+# Pinned: the versions used for every reported result
+fooof==1.1.1
+pyprep==0.9.0
+# Also required (exact versions are recorded in each run's provenance file)
+numpy
+scipy
+pandas
+matplotlib
+statsmodels
+requests
+mne
