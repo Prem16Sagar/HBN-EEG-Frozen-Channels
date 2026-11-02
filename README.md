@@ -15,7 +15,7 @@ The study scans every HBN-EEG resting-state recording in Releases 1–10 (2,597 
 | `code/` | Every script, in one flat folder. Several scripts import others by name (`pilot_v31.py`, `wp1_census.py`), so keep them together and do not rename them. |
 | `specs/` | Written specifications and amendments, each fixed before the analysis it governs was run. |
 | `results/` | Derived tables reported in the paper (see below). |
-| `figures/` | Figures 1-3 as PNG and PDF, plus `figure_numbers.json` with every number drawn. |
+| `figures/` | Figures 1–3 as PNG and PDF, plus `figure_numbers.json` with every number drawn. |
 
 ## How the scripts were run
 
@@ -35,12 +35,14 @@ All scripts were written as Google Colab cells with Google Drive mounted at `/co
 | 9 | `a2_r10r11_census.py` | Census of Releases 10 and 11 from OpenNeuro; combined summary (gates G-C3–G-C5) | Results, Table 1, Fig. 1 |
 | 9b | `census_build_r10_tables.py` | Builds the Release 10 recording, channel and episode tables from the per-child results, using `wp1_census.py`'s own table code | Results tables |
 | 10 | `wp2_harm.py` | Harm of frozen channels to the average reference, Release 3 (gate G-H1) | Results, Fig. 2, Suppl. Table S3 |
+| 10b | `wp2b_harm.py` | Follow-up harm analysis (amendment A4): zero-channel dilution control, median and interpolate-then-average references, 2–40 Hz inflation, fixed-set exponent error, alpha power, freeze timing inside eyes-closed segments (gates G-H1–G-H3). Needs `pilot_v31.py`, `wp1_census.py`, `mne` | Results, Suppl. Table S7 |
 | 11 | `wp2_checks_cell.py` | Read-only checks on WP2 outputs (outliers, failed fits) | Results |
 | 12 | `detector_test_runner.py` | PREP detection on Release 3 | Results, Suppl. Table S4 |
 | 13 | `wp3_detector_xrel.py` | PREP detection on the cross-release sample, by episode duration (gate G-P1) | Results, Fig. 3, Suppl. Table S4 |
 | 14 | `wp3_per_recording_cell.py` | Per-recording detection view (amendment A1) | Results, Suppl. Table S4 |
 | 15 | `wp4_make_audit_tables.py` → `wp4_a3_update.py` → `wp4_spotcheck_update.py` | Pipeline audit tables: round 1, round 2 (amendment A3), author spot-checks. Run in that order in one folder; they reproduce `results/audit/` exactly | Results, Table 2, Suppl. Table S5 |
 | 16 | `make_figures_v4.py` | Figures from the saved result files | Figs 1–3 |
+| 17 | `review2_exploratory.py` | Analyses added after the second external review (not pre-specified): exact median CIs, frozen-only age-slope contrast, worst-case values, dose–response, duration bands, detection criteria, threshold sensitivity, Cramér's V. Reads only `results/`; the age-slope part needs age and sex (`--harm`) | Results, Suppl. Tables S3, S4, S6 |
 
 ## Results files
 
@@ -52,6 +54,7 @@ All scripts were written as Google Colab cells with Google Drive mounted at `/co
 | `results/census/census_episodes_*.csv` | One row per frozen episode: channel, start, duration, stored value |
 | `results/census/census_summary_R1-R9.csv`, `census_failures_R1-R9.csv` | Release 1–9 summary from `wp1_census.py`, and its scan failures (none) |
 | `results/harm/harm_per_child.csv` | Per child: freeze group, exponent and reference amplitude under the correct, frozen-only and before-detection references, inflation and exponent error. Age and sex removed; they are in the HBN-EEG `participants.tsv` |
+| `results/harm2b/` | Follow-up harm analysis (WP2b): per child, every reference condition and measure (`harm2b_per_child.csv`); freeze timing per frozen scalp channel, whole recording and eyes-closed segments (`harm2b_timing_per_channel.csv`); group summaries with exact CIs (`harm2b_summary.csv`); pre-stated readings (`harm2b_readings.json`); gates and package versions |
 | `results/detection/detector_xrel_per_channel.csv` | Every frozen channel in the cross-release sample, its duration band and whether PREP flagged it |
 | `results/audit/` | Screening log (97 records), audit table (12 studies) and the audit summary with its process notes |
 
@@ -66,6 +69,7 @@ Children with failed fits have empty exponent-error cells. Percentages in the pa
 | `specs/revision_B_amendments.md` | Amendments A1 and A2 |
 | `specs/revision_B_A2_step2_spec_v2.md` | `a2_r10r11_census.py` |
 | `specs/amendment_A3.md` | Second audit search round |
+| `specs/revision_B_WP2b_spec.md` | `wp2b_harm.py` (amendment A4) |
 
 ## Requirements
 
