@@ -1,0 +1,1 @@
+{"children": 181, "failures": 0, "gate_G_H1": "passed for every child (checked per child; a failure stops the run)", "gate_G_H2": "passed for every child", "gate_G_H3": "passed for every child", "versions": {"numpy": "2.1.3", "scipy": "1.16.3", "pandas": "2.2.3", "fooof": "1.1.1", "mne": "1.13.2"}, "rmin": 0.85, "tolerance": 1e-06, "error_threshold": 0.05}
